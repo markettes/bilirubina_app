@@ -190,7 +190,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(7.0),
                           ),
-                          onPressed: () => {},
+                          onPressed: () => _form(),
                           color: Colors.red[200],
                           child: Text("Obtener tratamiento"),
                         ),
@@ -222,5 +222,9 @@ class _MyHomePageState extends State<MyHomePage> {
       initialTime: time,
     );
     if (picked != null && picked != time) return picked;
+  }
+
+  _form() {
+
   }
 }
